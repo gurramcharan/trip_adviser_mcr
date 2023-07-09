@@ -1,0 +1,19 @@
+.card-container {
+    position: relative;
+    
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .name-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    color: white;
+    padding: 8px;
+  }
+  
