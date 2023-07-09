@@ -1,5 +1,6 @@
 import React from 'react'
 import {MdLocationOn} from "react-icons/md"
+import "./CardComponent.css"
 
 export const CardComponent = ({item}) => {
   return (

@@ -16,17 +16,19 @@ export const Places = () => {
         <div>
             {FilteredPlaces.map((item) => (
                 <div key={item.id}>
-                    <h2>Top Destinations in {item.name}
+                    <h2 className='heading-center'>Top Destinations in {item.name}
                         for your next holiday</h2>
-                    {item
-                        .destinations
-                        .map((item) => (
-                            <div key={item.id}>
-                                <Link to={`/placeDetail/${countryId}/${placesId}/${item.id}`}>
-                                    <CardComponent item={item}/>
-                                </Link>
-                            </div>
-                        ))}
+                    <div className='flex-row gap margin-one justify-content'>
+                        {item
+                            .destinations
+                            .map((item) => (
+                                <div key={item.id}>
+                                    <Link to={`/placeDetail/${countryId}/${placesId}/${item.id}`}>
+                                        <CardComponent item={item}/>
+                                    </Link>
+                                </div>
+                            ))}
+                    </div>
                 </div>
             ))}
         </div>
